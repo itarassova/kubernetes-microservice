@@ -48,8 +48,8 @@ class PodResult:
 # {rule_name: "", result: ""}
 class RuleResult:
     def __init__(self, rule_name, result):
-        self.name = ""
-        self.result = ""
+        self.name = rule_name
+        self.result = result
 
 
 
