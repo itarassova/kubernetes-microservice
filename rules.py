@@ -42,7 +42,7 @@ class PodResult:
         self.pod_results.append(rule_result)
 
     def to_json(self):
-        return json.dumps(self, default = lambda o: o.__dict__, sort_keys = True, indent = 4)
+        return json.dumps(self, default = lambda o: o.__dict__, sort_keys = True, separators=(',', ':'))
 
 
 # {rule_name: "", result: ""}
